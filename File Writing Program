@@ -1,0 +1,11 @@
+import java.io.FileWriter;
+import java.io.IOException;
+
+class FileWrite {
+    public static void main(String[] args) throws IOException {
+        FileWriter fw = new FileWriter("data.txt");
+        fw.write("Welcome to AIML Java Programming");
+        fw.close();
+        System.out.println("Data written to file");
+    }
+}
